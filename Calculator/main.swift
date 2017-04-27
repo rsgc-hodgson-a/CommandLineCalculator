@@ -38,10 +38,36 @@ if selection == 1 {
     
     // Determine the result
     result = myCalculator.add(this: x, that: y)
-    
-} else if selection == 2 {
-    
 }
+
+else if selection == 2 {
+    // Get the input
+    var x = helperOne.getDoubleInput(with: "What is the first value? ")
+    var y = helperOne.getDoubleInput(with: "What is the second value? ")
+    
+    // Determine the result
+    result = myCalculator.subtract(this: x, that: y)
+}
+
+else if selection == 3 {
+// Get the input
+var x = helperOne.getDoubleInput(with: "What is the first value? ")
+var y = helperOne.getDoubleInput(with: "What is the second value? ")
+
+// Determine the result
+result = myCalculator.multiply(this: x, that: y)
+}
+
+else if selection == 4 {
+// Get the input
+var x = helperOne.getDoubleInput(with: "What is the first value? ")
+var y = helperOne.getDoubleInput(with: "What is the second value? ")
+
+// Determine the result
+result = myCalculator.divide(this: x, that: y)
+}
+
+
 
 // Print the result
 print("Result is \(result)")
